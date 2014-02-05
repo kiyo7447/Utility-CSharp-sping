@@ -1,0 +1,31 @@
+Super Ping Command  [Version 1.5.0]
+(C) Copyright 1997-2009 Author Kiyotaka Abe.
+
+ Usage : spoing オプション  [ホスト名|([IPアドレス],[ホスト名)]]+
+ 補足  : １）非同期のマルチスレッドでpingを実行します。
+         ２）マルチスレッド数は指定パラメータの数だけ生成します。(MAX:250)
+         ３）タイムアウト値のデフォルトはconfigファイルにて設定します。
+         ４）DNSの逆引きに対応未
+         ５）パラメータは、/と-は同等。また、大文字小文字関係なし。
+ オプション：
+         /w Timeout              :Defaultは5秒、5回で約25秒となる
+         /s [MaxThreadsCount] [CompletionPortThreads]  
+            MaxThreadsCount      :スレッド プール内のワーカー スレッドの最大数
+                                  (デフォルト250、最大256)
+            CompletionPortThreads:スレッドプール内の非同期 I/Oスレッドの最大数
+                                  (デフォルト1000、最大？)
+         /e 失敗の一覧のみを表示する。全てのpingを実行後に表示されます。
+         /i パラメータファイルを実行します。
+         /d 成功時の詳細情報を表示します。
+         /n Count                ：echoの実行回数１回でも成功したら成功とします。
+         /t 実行時間を先頭列に追加します。
+            例)2012/07/25(水) 13:18:25:192.168.2.1::Success
+ j実行例
+        sping 192.168.2.1 192.168.2.12 192.168.2.10
+        sping 192.168.2.1,Rooter 192.168.2.12,SGSV-Deneb
+        sping /w 100 /s 250 1000 /e 192.168.2.1 192.168.2.12 192.168.2.10
+        sping /i p.txt
+        sping 1                         192.168.2.1へping(Setting is config)
+        sping 1.213                     192.168.2.213へping(Setting is config)
+ 他
+        pingserverにて社内サーバの死活チェックができます

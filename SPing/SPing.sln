@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPing", "SPing\SPing.csproj", "{1ACF3A70-0E1E-4A2F-A5DF-71E3E37CD018}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1ACF3A70-0E1E-4A2F-A5DF-71E3E37CD018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ACF3A70-0E1E-4A2F-A5DF-71E3E37CD018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ACF3A70-0E1E-4A2F-A5DF-71E3E37CD018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ACF3A70-0E1E-4A2F-A5DF-71E3E37CD018}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
